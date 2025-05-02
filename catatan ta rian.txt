@@ -1,0 +1,40 @@
+*instal laravel
+*instal breeze (auth)
+
+php artisan make:model NamaModel -mcr
+php artisan make:model PangkatGolongan -mcr
+
+buat migration
+*users (tambah role)
+PangkatGolongan
+Jabatan
+- id, nama 
+Arah_disposisi
+
+Surat_masuk
+Disposisi
+Penerima_disposisi
+
+Surat_keluar
+
+Persetujuan_surat_keluar
+- id
+- validasi oleh
+- tanggal
+- catatan
+- surat_keluar_id
+
+Informasi
+
+Alur aplikasi surat masuk
+1. Sekre terima surat dari instansi, dan input surat masuk ke dalam aplikasi
+2. Kadin terima input surat dari sekre, lalu disposisi ke kabid
+3. Kabid terima disposisi dari kadin, lalu disposisi ke subkoordinator
+
+Alur aplikasi surat keluar
+1. Subkoordinator input surat keluar, dan diterima oleh kabid
+2. Kabid terima input surat, kabid melakukan validasi surat 
+3. Surat yang divalidasi, diteruskan ke Sekre, Sekre melakukan pengecekan surat
+4. Kadin menerima surat keluar yang telah diperiksa Sekre
+5. Jika disetujui, dicetak oleh Sekre, dan diteruskan ke bidang
+6. Jika ditolak, dikembalikan ke bidang
