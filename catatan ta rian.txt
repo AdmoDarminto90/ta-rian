@@ -26,6 +26,18 @@ Persetujuan_surat_keluar
 
 Informasi
 
+Menu
+----
+8 Dashboard
+4 Surat Masuk
+5 Disposisi
+6 Surat Keluar
+7 Persetujuan Surat Keluar
+1 Jabatan
+2 Pangkat Golongan
+3 Arah Disposisi
+User
+
 Alur aplikasi surat masuk
 1. Sekre terima surat dari instansi, dan input surat masuk ke dalam aplikasi
 2. Kadin terima input surat dari sekre, lalu disposisi ke kabid
